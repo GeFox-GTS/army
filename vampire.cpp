@@ -5,6 +5,7 @@
         ability = new Ability(hitPointsLimit, manaPointsLimit);
         combat = new Combat(damage);
         this->name = name;
+        this->type = "Vampire";
 
         if (Unit::debug) {
             std::cout << "Vampire Created.(" << this << ")" << std::endl;

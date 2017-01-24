@@ -9,7 +9,9 @@
         altCombat = new Combat(damage * 2);
 
         this->isTransformed = false;
-        this->name = name;      
+        this->name = name;
+        this->type = "Werewolf";
+
         if (Unit::debug) {
             std::cout << "Werewolf created.(" << this << ")"<< std::endl;
         }

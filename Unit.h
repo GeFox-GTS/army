@@ -25,6 +25,8 @@ public:
 
 	void ensureIsAlive();
 	const std::string getName() const;
+	const std::string getType() const;
+    
     const int getHitPointsLimit() const;
     const int getHitPoints() const;
     const int getManaPointsLimit() const;
@@ -32,6 +34,7 @@ public:
     const int getDamage() const;
 
     void setHitPoints(int hp);
+    void setUnitType(std::string type);
 
 };
 

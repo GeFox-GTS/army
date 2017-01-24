@@ -19,6 +19,9 @@
     const std::string Unit::getName() const{
         return this->name;
     }
+    const std::string Unit::getType() const{
+        return this->type;
+    }
     const int Unit::getHitPointsLimit() const{
         return ability->getHitPointsLimit();
     }
@@ -48,8 +51,12 @@
     void Unit::setHitPoints(int hp){
         ability->setHitPoints(hp);
     }
+    void Unit::setUnitType(std::string type){
+        this->type = type;
+    }
 
     std::ostream& operator<<(std::ostream& out, const Unit& unit){
+        out << "Type: " << unit.getType() << " ";
         out << "Name: " << unit.getName() << "\n";
         out << "HP: " << unit.getHitPoints() << "/" << unit.getHitPointsLimit() << "\n";
         out << "MP: " << unit.getManaPoints() << "/" << unit.getManaPointsLimit() << "\n";
