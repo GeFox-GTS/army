@@ -35,5 +35,7 @@
     }
 
     void Combat::counterAttack(Unit& unit){
-        unit.takeDamage(this->damage / 2);
+        if (unit.getType() != "Rogue") {
+            unit.takeDamage(this->damage / 2);
+        }
     }
