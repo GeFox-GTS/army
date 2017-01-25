@@ -5,6 +5,7 @@
 #include "Werewolf.h"
 #include "Vampire.h"
 #include "Rogue.h"
+#include "Berserker.h"
 
 int main() {
 	std::cout << "Launched." << std::endl;
@@ -14,15 +15,17 @@ int main() {
 	Werewolf* w1 = new Werewolf();
 	Vampire* v1 = new Vampire();
 	Rogue* r1 = new Rogue();
+	Berserker* b1 = new Berserker();
 
 	std::cout << *s1 << std::endl;
 	std::cout << *w1 << std::endl;
 	std::cout << *v1 << std::endl;
 	std::cout << *r1 << std::endl;
+	std::cout << *b1 << std::endl;
 
-	r1->attack(*s1);
+	b1->attack(*s1);
 	std::cout << *s1 << std::endl;
-	std::cout << *v1 << std::endl;
+	std::cout << *b1 << std::endl;
 
 	w1->transform();
 	std::cout << *w1 << std::endl;
