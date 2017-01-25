@@ -39,3 +39,9 @@
             unit.takeDamage(this->damage / 2);
         }
     }
+
+    void Combat::bite(Unit& enemy, std::string type){
+        if ( enemy.getType() != "Vampire" || enemy.getType() != "Werewolf" ) {
+            
+        }
+    }

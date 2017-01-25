@@ -1,5 +1,6 @@
 #ifndef COMBAT_H
 #define COMBAT_H 
+#include <iostream>
 
 class Unit;
 
@@ -16,6 +17,8 @@ public:
 	void attack(Unit& enemy);
 	void counterAttack(Unit& unit);
 	void takeDamage(int damage, Unit& unit);
+
+	void bite(Unit& enemy, std::string type);
 };
 
 #endif //COMBAT_H

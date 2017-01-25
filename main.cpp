@@ -35,6 +35,7 @@ int main() {
     delete w1;
     delete v1;
     delete r1;
+    delete b1;
 
     return 0;
 }
