@@ -23,12 +23,12 @@ int main() {
 	std::cout << *r1 << std::endl;
 	std::cout << *b1 << std::endl;
 
-	b1->attack(*s1);
+	w1->bite(*s1);
 	std::cout << *s1 << std::endl;
-	std::cout << *b1 << std::endl;
-
-	w1->transform();
 	std::cout << *w1 << std::endl;
+
+	// w1->transform();
+	// std::cout << *w1 << std::endl;
 
 
     delete s1;

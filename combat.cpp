@@ -40,8 +40,8 @@
         }
     }
 
-    void Combat::bite(Unit& enemy, std::string type){
-        if ( enemy.getType() != "Vampire" || enemy.getType() != "Werewolf" ) {
-            
-        }
-    }
+    // void Combat::bite(Unit& enemy, std::string type){
+    //     if ( enemy.getType() != "Vampire" || enemy.getType() != "Werewolf" ) {
+    //         enemy.setType(type); 
+    //     }
+    // }

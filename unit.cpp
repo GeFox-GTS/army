@@ -48,6 +48,12 @@
     void Unit::counterAttack(Unit& enemy){
         combat->counterAttack(enemy);
     }
+    void Unit::bite(Unit& enemy){
+        if (this->type == "Werewolf" || this->type == "Vampire") {
+            enemy.setUnitType(this->type);
+        }
+    }
+
     void Unit::setHitPoints(int hp){
         ability->setHitPoints(hp);
     }
