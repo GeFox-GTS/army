@@ -13,6 +13,10 @@ protected:
 	Ability* ability;
 	std::string type;
 	std::string name;
+    
+    Ability* altAbility;
+    Combat* altCombat;
+
 public:
 	static bool debug;
 
