@@ -28,8 +28,12 @@ int main() {
 	std::cout << *w1 << std::endl;
 
 	w1->transform();
+	s1->transform();
 	std::cout << *w1 << std::endl;
+	std::cout << *s1 << std::endl;
 
+	s1->transform();
+	std::cout << *s1 << std::endl;
 
     delete s1;
     delete w1;

@@ -27,6 +27,7 @@ public:
 	virtual void counterAttack(Unit& enemy);
 	virtual void takeDamage(int damage);
 	virtual void bite(Unit& enemy);
+	virtual void transform();
 
 	void ensureIsAlive();
 	const std::string getName() const;

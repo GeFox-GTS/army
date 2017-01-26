@@ -24,34 +24,19 @@
         delete altAbility;
     }
     
-    void Werewolf::transform(){
-        float coef = (float)altAbility->getHitPointsLimit() / (float)ability->getHitPointsLimit();
+    // void Werewolf::transform(){
+    //     float coef = (float)altAbility->getHitPointsLimit() / (float)ability->getHitPointsLimit();
 
-        Ability* tmp = ability;
-        Combat* tmpCombat = combat;
+    //     Ability* tmp = ability;
+    //     Combat* tmpCombat = combat;
 
-        altAbility->setHitPoints(ability->getHitPoints() * coef);
-        ability = altAbility;
-        altAbility = tmp;
+    //     altAbility->setHitPoints(ability->getHitPoints() * coef);
+    //     ability = altAbility;
+    //     altAbility = tmp;
 
-        altCombat->setDamage(combat->getDamage() * coef);
-        combat = altCombat;
-        altCombat = tmpCombat;
-
-
-        // if (!this->isTransformed) {
-        //  ability->setHitPointsLimit(ability->getHitPointsLimit() * 2);
-        //  ability->setHitPoints(ability->getHitPoints() * 2);
-        //  this->isTransformed = true;
-        // } else {
-        //  ability->setHitPointsLimit(ability->getHitPointsLimit() / 2);
-        //  ability->setHitPoints(ability->getHitPoints() / 2);
-        //  this->isTransformed = false;
-        // }
-    }
-
-    // void Werewolf::attack(Unit& enemy){
-
+    //     altCombat->setDamage(combat->getDamage() * coef);
+    //     combat = altCombat;
+    //     altCombat = tmpCombat;
     // }
 
     void Werewolf::takeDamage(){

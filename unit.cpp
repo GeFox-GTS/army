@@ -53,7 +53,22 @@
             enemy.setUnitType(this->type);
         }
     }
+    void Unit::transform(){
+        if (this->type == "Werewolf") {
+            float coef = (float)altAbility->getHitPointsLimit() / (float)ability->getHitPointsLimit();
 
+            Ability* tmp = ability;
+            Combat* tmpCombat = combat;
+
+            altAbility->setHitPoints(ability->getHitPoints() * coef);
+            ability = altAbility;
+            altAbility = tmp;
+
+            altCombat->setDamage(combat->getDamage() * coef);
+            combat = altCombat;
+            altCombat = tmpCombat;
+        }
+    }
     void Unit::setHitPoints(int hp){
         ability->setHitPoints(hp);
     }

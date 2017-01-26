@@ -4,7 +4,7 @@
 #include "Unit.h"
 
 class Werewolf: public Unit {
-    protected:
+    // protected:
         // bool isTransformed;
 
 
@@ -12,7 +12,7 @@ class Werewolf: public Unit {
         Werewolf(int hitPointsLimit=80, int manaPointsLimit=50, const std::string  name="Wolfenstein", int damage=10);
         virtual ~Werewolf();
         
-        void transform();
+        // void transform();
         // void attack(Unit& enemy);
         void takeDamage();
 };
