@@ -5,7 +5,7 @@
 
 class Werewolf: public Unit {
     protected:
-        bool isTransformed;
+        // bool isTransformed;
         Ability* altAbility;
         Combat* altCombat;
 

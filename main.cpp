@@ -27,8 +27,8 @@ int main() {
 	std::cout << *s1 << std::endl;
 	std::cout << *w1 << std::endl;
 
-	// w1->transform();
-	// std::cout << *w1 << std::endl;
+	w1->transform();
+	std::cout << *w1 << std::endl;
 
 
     delete s1;

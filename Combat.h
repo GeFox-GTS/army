@@ -18,7 +18,7 @@ public:
 	void counterAttack(Unit& unit);
 	void takeDamage(int damage, Unit& unit);
 
-	void bite(Unit& enemy, std::string type);
+	// void bite(Unit& enemy, std::string type);
 };
 
 #endif //COMBAT_H
